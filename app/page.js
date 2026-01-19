@@ -15,16 +15,16 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-          <h1 className="mb-1 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-500 bg-clip-text text-5xl font-semibold tracking-tight text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400 sm:text-6xl md:text-7xl">
-            How to Use Tailwind CSS
-          </h1>
-          
-          <p className="mx-auto max-w-3xl text-xl font-medium text-amber-800/80 dark:text-amber-200/80 md:text-2xl tracking-wide">
-            Tutorial by Jeko Damiel Paray
-          </p>
-        </div>
+            <h1 className="mb-1 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-500 bg-clip-text text-5xl font-semibold tracking-tight text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400 sm:text-6xl md:text-7xl">
+              How to Use Tailwind CSS
+            </h1>
 
-        <hr className="my-6 h-px border-0 bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
+            <p className="mx-auto max-w-3xl text-xl font-medium text-amber-800/80 dark:text-amber-200/80 md:text-2xl tracking-wide">
+              Tutorial by Jeko Damiel Paray
+            </p>
+          </div>
+
+          <hr className="my-6 h-px border-0 bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
 
           <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
             The fastest way to build beautiful, modern interfaces — without ever leaving your HTML.
@@ -130,10 +130,10 @@ export default function Home() {
             {/* Card 3 – Glowing Tag */}
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="flex items-center justify-center bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-12 dark:from-amber-950/30 dark:to-yellow-950/30">
-                <span 
+                <span
                   className="
                     inline-flex items-center justify-center
-                    rounded-full 
+                    rounded-full
                     bg-gradient-to-r from-amber-500 via-yellow-300 via-50% to-amber-500
                     bg-[length:300%_auto] px-8 py-3.5 font-medium text-white shadow-lg
                     animate-[shine_3s_linear_infinite]
@@ -146,17 +146,18 @@ export default function Home() {
               <div className="p-8 space-y-8">
                 <div>
                   <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
-                  Glowing Tag
+                    Glowing Tag
                   </h3>
                   <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
                     app/globals.css:
                   </h3>
                   <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm leading-relaxed dark:bg-amber-950/40 max-h-[180px] scrollbar-thin scrollbar-thumb-amber-400/50 scrollbar-track-amber-100/30 dark:scrollbar-thumb-amber-600/50 dark:scrollbar-track-amber-950/30">
                     <code className="text-amber-900 dark:text-amber-200 block whitespace-pre">
-            {`@keyframes shine {
-              0%    { background-position: 200% center; }
-              100%  { background-position: -200% center; }
-            }`}</code>
+                      {`@keyframes shine {
+  0%    { background-position: 200% center; }
+  100%  { background-position: -200% center; }
+}`}
+                    </code>
                   </pre>
                 </div>
 
@@ -166,41 +167,64 @@ export default function Home() {
                   </h3>
                   <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm leading-relaxed dark:bg-amber-950/40 max-h-[220px] scrollbar-thin scrollbar-thumb-amber-400/50 scrollbar-track-amber-100/30 dark:scrollbar-thumb-amber-600/50 dark:scrollbar-track-amber-950/30">
                     <code className="text-amber-900 dark:text-amber-200 block whitespace-pre">
-            {`<span
-              className="
-                inline-flex items-center justify-center
-                rounded-full 
-                bg-gradient-to-r from-amber-500 via-yellow-300 via-50% to-amber-500
-                bg-[length:300%_auto] px-8 py-3.5 font-medium text-white shadow-lg
-                animate-[shine_3s_linear_infinite]
-              "
-            >
-              New Feature!
-            </span>`}</code>
+                      {`<span
+  className="
+    inline-flex items-center justify-center
+    rounded-full
+    bg-gradient-to-r from-amber-500 via-yellow-300 via-50% to-amber-500
+    bg-[length:300%_auto] px-8 py-3.5 font-medium text-white shadow-lg
+    animate-[shine_3s_linear_infinite]
+  "
+>
+  New Feature!
+</span>`}
+                    </code>
                   </pre>
                 </div>
               </div>
             </div>
 
-            {/* New Card 4 – Responsive Navbar Snippet */}
+            {/* Updated Card 4 – Simple Navbar with hover effect */}
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-10 dark:from-amber-950/30 dark:to-yellow-950/30">
-                <div className="flex items-center justify-between rounded-xl bg-white/80 px-6 py-4 shadow-sm dark:bg-zinc-900/80">
+                <nav className="flex items-center justify-between rounded-xl bg-white/80 px-6 py-4 shadow-sm dark:bg-zinc-900/80">
                   <div className="text-lg font-semibold text-amber-800 dark:text-amber-200">Logo</div>
-                  <div className="flex gap-6 text-amber-700 dark:text-amber-300">
-                    <span>Home</span>
-                    <span>Features</span>
-                    <span>Pricing</span>
+
+                  <div className="flex gap-8 text-amber-700 dark:text-amber-300">
+                    <span className="relative cursor-pointer transition-colors duration-200 hover:text-amber-500 group/link">
+                      Home
+                      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-500 transition-all duration-300 ease-out group-hover/link:w-full"></span>
+                    </span>
+
+                    <span className="relative cursor-pointer transition-colors duration-200 hover:text-amber-500 group/link">
+                      Features
+                      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-500 transition-all duration-300 ease-out group-hover/link:w-full"></span>
+                    </span>
+
+                    <span className="relative cursor-pointer transition-colors duration-200 hover:text-amber-500 group/link">
+                      Pricing
+                      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-500 transition-all duration-300 ease-out group-hover/link:w-full"></span>
+                    </span>
                   </div>
-                </div>
+                </nav>
               </div>
+
               <div className="p-8">
                 <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
                   Simple Navbar
                 </h3>
                 <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm dark:bg-amber-950/40">
                   <code className="text-amber-900 dark:text-amber-200">
-                    {`<nav className="flex items-center justify-between rounded-xl bg-white/80 px-6 py-4 shadow-sm dark:bg-zinc-900/80"> ... `}
+                    {`<nav className="flex items-center justify-between rounded-xl bg-white/80 px-6 py-4 shadow-sm dark:bg-zinc-900/80">
+  <div className="text-lg font-semibold ...">Logo</div>
+  <div className="flex gap-8 ...">
+    <span className="relative cursor-pointer ... hover:text-amber-500 group/link">
+      Home
+      <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-500 ... group-hover/link:w-full"></span>
+    </span>
+    {/* repeat pattern for Features & Pricing */}
+  </div>
+</nav>`}
                   </code>
                 </pre>
               </div>
