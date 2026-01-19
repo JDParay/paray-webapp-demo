@@ -24,6 +24,8 @@ export default function Home() {
           </p>
         </div>
 
+        <hr className="my-6 h-px border-0 bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
+
           <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
             The fastest way to build beautiful, modern interfaces — without ever leaving your HTML.
           </p>
