@@ -58,14 +58,16 @@ export default function Home() {
             <div className="rounded-2xl border border-amber-200/50 bg-white/80 p-8 shadow-md dark:border-amber-800/30 dark:bg-zinc-900/60">
               <h3 className="mb-4 text-2xl font-semibold">Utility-First</h3>
               <p className="text-lg text-amber-900/90 dark:text-amber-200/90">
-                Instead of writing custom CSS, you build designs directly in your markup using small, single-purpose classes.
+                Instead of writing custom CSS, you build designs directly in your markup using small, single-purpose classes. <br>
+                This makes it easier to formulate and strategize your website, leaving you hassle-free.</br>
               </p>
             </div>
 
             <div className="rounded-2xl border border-amber-200/50 bg-white/80 p-8 shadow-md dark:border-amber-800/30 dark:bg-zinc-900/60">
               <h3 className="mb-4 text-2xl font-semibold">No Context Switching</h3>
               <p className="text-lg text-amber-900/90 dark:text-amber-200/90">
-                No more jumping between HTML and huge CSS files — everything lives together.
+                No more jumping between HTML and huge CSS files. everything lives together.
+                This keeps your focus in one place and lets you iterate on the look and feel instantly without losing context.
               </p>
             </div>
           </div>
