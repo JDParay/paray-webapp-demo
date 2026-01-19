@@ -227,7 +227,7 @@ export default function Home() {
         </div>
 
         <footer className="mt-28 text-center text-base text-amber-900/70 dark:text-amber-200/60">
-          <p>Tailwind CSS • Next.js • Made by JD • 2026</p>
+          <p>Tailwind CSS • Next.js</p>
         </footer>
       </main>
     </div>
