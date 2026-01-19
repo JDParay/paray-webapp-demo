@@ -188,7 +188,7 @@ export default function Home() {
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-10 dark:from-amber-950/30 dark:to-yellow-950/30">
                 <nav className="flex items-center justify-between rounded-xl bg-white/80 px-6 py-4 shadow-sm dark:bg-zinc-900/80">
-                  <div className="text-lg font-semibold text-amber-800 dark:text-amber-200">Logo</div>
+                  <div className="text-lg font-semibold text-amber-800 dark:text-amber-200"></div>
 
                   <div className="flex gap-8 text-amber-700 dark:text-amber-300">
                     <span className="relative cursor-pointer transition-colors duration-200 hover:text-amber-500 group/link">
