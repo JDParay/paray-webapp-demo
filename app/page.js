@@ -14,15 +14,15 @@ export default function Home() {
             Tailwind CSS 2025 Guide
           </div>
 
-          <h1 className="mb-8 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-500 bg-clip-text text-5xl font-semibold tracking-tight text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400 sm:text-6xl md:text-7xl">
+          <div className="text-center">
+          <h1 className="mb-1 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-500 bg-clip-text text-5xl font-semibold tracking-tight text-transparent dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400 sm:text-6xl md:text-7xl">
             How to Use Tailwind CSS
           </h1>
-
-          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
+          
+          <p className="mx-auto max-w-3xl text-xl font-medium text-amber-800/80 dark:text-amber-200/80 md:text-2xl tracking-wide">
             Tutorial by Jeko Damiel Paray
           </p>
-
-          <hr className="my-5 h-px bg-amber-500/30 border-0 dark:bg-amber-400/30" />
+        </div>
 
           <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
             The fastest way to build beautiful, modern interfaces — without ever leaving your HTML.
