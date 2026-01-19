@@ -117,7 +117,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 3 – Glowing Pill Badge */}
+            {/* Card 3 – Glowing Tag */}
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="flex items-center justify-center bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-12 dark:from-amber-950/30 dark:to-yellow-950/30">
                 <span 
@@ -135,7 +135,10 @@ export default function Home() {
 
               <div className="p-8 space-y-8">
                 <div>
-                  <h3 className="mb-3 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
+                  <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
+                  Glowing Tag
+                  </h3>
+                  <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
                     app/globals.css:
                   </h3>
                   <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm leading-relaxed dark:bg-amber-950/40 max-h-[180px] scrollbar-thin scrollbar-thumb-amber-400/50 scrollbar-track-amber-100/30 dark:scrollbar-thumb-amber-600/50 dark:scrollbar-track-amber-950/30">
@@ -143,13 +146,12 @@ export default function Home() {
             {`@keyframes shine {
               0%    { background-position: 200% center; }
               100%  { background-position: -200% center; }
-            }
             }`}</code>
                   </pre>
                 </div>
 
                 <div>
-                  <h3 className="mb-3 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
+                  <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
                     in app/page.js:
                   </h3>
                   <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm leading-relaxed dark:bg-amber-950/40 max-h-[220px] scrollbar-thin scrollbar-thumb-amber-400/50 scrollbar-track-amber-100/30 dark:scrollbar-thumb-amber-600/50 dark:scrollbar-track-amber-950/30">
