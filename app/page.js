@@ -19,6 +19,12 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
+            Tutorial by Jeko Damiel Paray
+          </p>
+
+          <hr className="my-5 h-px bg-amber-500/30 border-0 dark:bg-amber-400/30" />
+
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-amber-900/90 dark:text-amber-100/90 md:text-2xl">
             The fastest way to build beautiful, modern interfaces — without ever leaving your HTML.
           </p>
         </div>
