@@ -117,36 +117,52 @@ export default function Home() {
               </div>
             </div>
 
-            {/* New Card 3 – Badge / Pill with shimmer */}
+            {/* Card 3 – Glowing Pill Badge */}
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="flex items-center justify-center bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-12 dark:from-amber-950/30 dark:to-yellow-950/30">
                 <span 
                   className="
-                    relative inline-block rounded-full 
-                    bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500 
-                    bg-[length:200%_auto] px-6 py-2.5 font-medium text-white shadow
-                    animate-[shine_2.5s_linear_infinite]
+                    relative inline-flex items-center justify-center
+                    rounded-full 
+                    bg-gradient-to-r from-amber-500 via-yellow-300 via-50% to-amber-500
+                    bg-[length:300%_auto] px-8 py-3.5 font-medium text-white shadow-lg
+                    animate-[shine_3s_linear_infinite]
                   "
                 >
-                  New Feature
-                  {/* Optional subtle sparkle dots */}
-                  <span className="absolute -right-1 -top-1 h-2 w-2 rounded-full bg-white/60 animate-ping"></span>
+                  New Feature!
+                  {/* Subtle sparkle dot */}
+                  <span className="absolute -right-1.5 -top-1.5 h-3 w-3 rounded-full bg-white/70 animate-ping"></span>
+                  {/* Optional extra tiny sparkles if you want more bling */}
+                  {/* <span className="absolute -left-1 -bottom-1 h-1.5 w-1.5 rounded-full bg-white/50 animate-ping delay-150"></span> */}
                 </span>
               </div>
               <div className="p-8">
                 <h3 className="mb-4 font-mono text-base font-medium uppercase tracking-wide text-amber-700 dark:text-amber-300">
-                  Shimmer Status Badge
+                  Glowing Pill/Badge
                 </h3>
                 <pre className="overflow-x-auto rounded-2xl bg-amber-50/60 p-6 text-sm dark:bg-amber-950/40">
-                  <code className="text-amber-900 dark:text-amber-200">
-            {`<span className="rounded-full bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500 bg-[length:200%_auto] px-6 py-2.5 text-white shadow animate-[shine_2.5s_linear_infinite]">
-              New Feature
+                  <code className="text-amber-900 dark:text-amber-200 block whitespace-pre-wrap">
+            {`// globals.css (or wherever your custom @keyframes live)
+            @keyframes shine {
+              0%   { background-position: 200% center; }
+              100% { background-position: -200% center; }
+            }
+
+            // Then in JSX:
+            <span className="
+              relative inline-flex items-center justify-center
+              rounded-full 
+              bg-gradient-to-r from-amber-500 via-yellow-300 via-50% to-amber-500
+              bg-[length:300%_auto] px-8 py-3.5 text-white shadow-lg
+              animate-[shine_3s_linear_infinite]
+            ">
+              New Feature!
             </span>`}
                   </code>
                 </pre>
               </div>
             </div>
-            
+
             {/* New Card 4 – Responsive Navbar Snippet */}
             <div className="group overflow-hidden rounded-3xl border border-amber-200/40 bg-white/85 shadow-lg transition-all hover:shadow-2xl dark:border-amber-800/30 dark:bg-zinc-900/65">
               <div className="bg-gradient-to-br from-amber-50/70 to-yellow-50/70 p-10 dark:from-amber-950/30 dark:to-yellow-950/30">
@@ -177,7 +193,7 @@ export default function Home() {
         <div className="rounded-3xl bg-gradient-to-r from-amber-600 to-yellow-500 p-12 text-center text-white shadow-2xl">
           <h2 className="mb-6 text-4xl font-semibold">Ready to Start?</h2>
           <p className="mb-10 text-xl opacity-95">
-            The best way to learn Tailwind is to build something real — right now.
+            The best way to learn Tailwind is to experience it yourself.
           </p>
           <div className="flex flex-col justify-center gap-6 sm:flex-row">
             <a
